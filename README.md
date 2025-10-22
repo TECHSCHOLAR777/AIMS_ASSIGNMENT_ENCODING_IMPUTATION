@@ -43,12 +43,3 @@ This repo contains three Python scripts and one CSV file:
 Thanks for checking it out! 🙌
 – Rishi Garg
 
-
-
-   
-   
-4. 
-
-
-5. 
-6. 
