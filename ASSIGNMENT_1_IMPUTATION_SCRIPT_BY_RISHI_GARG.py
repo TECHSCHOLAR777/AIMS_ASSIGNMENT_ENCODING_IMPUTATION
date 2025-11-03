@@ -9,8 +9,8 @@ def sep():
 
 def Imputer(raw_data):
         object_cols=[col for col in raw_data.columns if raw_data[col].dtype=='object']
-        int_cols=[col for col in raw_data.columns if raw_data[col].dtype=='int']
-        float_cols=[col for col in raw_data.columns if raw_data[col].dtype=='float']
+        int_cols=[col for col in raw_data.columns if raw_data[col].dtype in ["int8","int16","int32","int64"]]
+        float_cols=[col for col in raw_data.columns if raw_data[col].dtype in ["float16","float32","float64"]]
         sep()
         print(f"Your provided csv file contains {len(int_cols)} integer datatype columns, {len(float_cols)} float datatype columns")
         sep()
